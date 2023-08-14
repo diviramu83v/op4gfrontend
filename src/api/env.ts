@@ -1,0 +1,1 @@
+export const domain = `https://example.com/api/v1`

@@ -1,0 +1,330 @@
+@import '../../styles/variable';
+
+.container {
+  margin: 0 24px;
+}
+.fs22 {
+  font-size: 22px;
+}
+
+.my20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.d-flex {
+  display: flex;
+}
+.w50p {
+  width: 50%;
+}
+.w-100p {
+  width: 100%;
+}
+.bd-solid {
+  border: 1px solid;
+}
+.ml-100 {
+  margin-left: 100px;
+}
+.bg-width {
+  height: 40px;
+}
+.pb10 {
+  padding-bottom: 10px;
+}
+.pt20 {
+  padding-top: 20px;
+}
+
+.form-size {
+  height: 55px;
+  align-items: center;
+}
+.pr10 {
+  padding-right: 10px;
+}
+.info-icon-color {
+  color: $secondary-color;
+}
+
+.cl-red {
+  color: $red-color;
+}
+
+.uploadedFileName {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  span {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: $secondary-color;
+    width: calc(100% - 50px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow:hidden;
+  display:inline-block;
+  }
+}
+
+.btn-save {
+  @extend .btn-primary;
+  margin-top: 20px;
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.basic-multi-select {
+  width: 100%;
+  max-width: 500px;
+}
+
+.drag-container {
+  width: 100%;
+  max-width: 500px;
+  height: 80px;
+  border: 1px dashed $black-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  border-radius: $field-border-radius;
+  cursor: pointer;
+  span {
+    color: $secondary-color;
+  }
+}
+
+.multipleSelectCheckmarks {
+  margin-top: 20px;
+  p {
+    span {
+      color: $red-color;
+    }
+  }
+}
+
+.formControl {
+  margin: 1;
+  width: 100%;
+  max-width: 500px;
+}
+
+.selectedOption {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 5px;
+  margin: 2px 2px;
+  background-color: $secondary-color;
+  color: $white-color;
+}
+
+.scrollContainer {
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: wrap;
+}
+
+.table-component {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+  border-radius: $field-border-radius;
+  overflow: hidden;
+  border: 1px solid $table-color;
+  .head {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $table-color;
+    p {
+      border-right: 1px solid $table-color;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      box-sizing: border-box;
+      height: 50px;
+      &:nth-child(2) {
+        border-right: none;
+      }
+    }
+  }
+  .row-component {
+    width: 100%;
+    margin-top: -1px;
+  }
+  .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #e0e0e0;
+    background-color: $ligh-gray-color;
+    .label {
+      width: 50%;
+      display: flex;
+      align-items: center;
+    }
+    .input {
+      background-color: white;
+      width: 50%;
+      text-align: center;
+    }
+    label {
+      margin-left: 10px;
+    }
+    input {
+      height: 25px;
+      padding: 6px;
+      margin: 8px;
+      width: 80px;
+      border: 1px solid $table-color;
+      border-radius: $field-border-radius;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      &:focus {
+        border-color: #80bdff;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+      }
+    }
+  }
+}
+
+.disabled-div {
+  pointer-events: none;
+  user-select: none;
+  .drag-container{
+    border: 1px dashed $table-color;
+    color:$table-color;
+  }
+}
+
+.select-project {
+  border: none;
+  background-color: $white-color;
+  font-size: 22px;
+  width: 100%;
+}
+.save-container {
+  display: flex;
+  border-radius: $field-border-radius;
+  overflow: hidden;
+  background-color: $secondary-color;
+}
+
+.save-btn {
+  padding: 20px;
+  text-transform: none;
+  background-color: transparent;
+  color: $white-color !important;
+  flex: 1;
+}
+
+.save-btn:hover {
+  background-color: $third-color;
+}
+
+.save-btn-dropdown {
+  border-radius: 0 $field-border-radius $field-border-radius 0 !important;
+  background-color: $third-color !important;
+}
+
+.save-btn-dropdown:hover {
+  background-color: $third-color;
+}
+
+.save-btn-icon {
+  color: $white-color;
+}
+.border-blue {
+  border: 1px solid RGBA(0, 0, 0, 0.25) !important;
+  min-height: 52px !important;
+  justify-content: space-between !important;
+  color: black !important;
+  text-transform: none !important;
+}
+
+.text-center {
+  text-align: center;
+}
+.flex-center{
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .sm-flex-center {
+    display: flex;
+    justify-content: center;
+  }
+  .sm-center {
+    justify-content: center;
+  }
+}
+
+.save-container {
+  display: flex;
+  border-radius: $field-border-radius;
+  overflow: hidden;
+  background-color: $secondary-color;
+}
+
+.save-btn {
+  border-radius: 5px 0px 0px 5px;
+  padding: 20px;
+  text-transform: none;
+  background-color: transparent;
+  color: $white-color !important;
+  flex: 1;
+}
+
+.save-btn:hover {
+  background-color: $third-color;
+}
+
+.save-btn-dropdown {
+  border-radius: 0 $field-border-radius $field-border-radius 0 !important;
+  background-color: $third-color !important;
+  min-width: 50px;
+}
+
+.save-btn-dropdown:hover {
+  background-color: $third-color;
+}
+
+.save-btn-icon {
+  color: $white-color;
+}
+
+.text-center {
+  text-align: center;
+}
+.numberInput {
+  height: 25px;
+  padding: 6px;
+  width: 80px;
+  border: 1px solid $table-color;
+  border-radius: $field-border-radius;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  &:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+}
+@media (max-width: 900px) {
+  .sm-center {
+    justify-content: center;
+  }
+  .sm-btn {
+    width: 400px;
+  }
+  .sm-flex-center {
+    display: flex;
+    justify-content: center;
+  }
+}

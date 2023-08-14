@@ -1,0 +1,37 @@
+@import '../../styles/variable.scss';
+.sidebar {
+  flex: 0 0 auto;
+  height: calc(100vh - 3em);
+  margin: 30px 0;
+  transition: margin 225ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  padding: 0 24px;
+  &-nav{
+    position: relative;
+    width: 240px;
+    transition: width 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+    background-color: transparent;
+    border-right: none;
+    z-index: inherit;
+    a {
+      padding: 8px 10px;
+      display: block;
+      color: #5a6a85;
+      border-radius: $field-border-radius;
+      &:hover{
+       
+          background-color: rgb($primary-color, 0.2);
+          color: $primary-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    padding: 0 16px;
+    &-nav{
+      width: 200px;
+    }
+  }
+ 
+}

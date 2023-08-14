@@ -1,0 +1,59 @@
+@import '../../styles/variable.scss';
+
+.btn {
+  @extend .btn-outlined;
+  text-decoration: none;
+  margin-right: 8px !important;
+}
+
+.nav {
+  background-color: $primary-color;
+}
+.title-logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  color: $white-color;
+  font-weight: bold;
+  font-size: $logo-font-size;
+  margin-top: 4px;
+  p {
+    width: 100%;
+  }
+}
+
+.link {
+  text-decoration: none;
+}
+
+.nav-link {
+  color: white;
+  margin: 0px 5px;
+  text-decoration: none;
+}
+
+.bar-icon {
+  color: $white-color;
+}
+
+.close-icon {
+  color: $white-color;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 20px;
+
+  @media (max-width: 1180px) {
+    flex-direction: column;
+    align-items: flex-end;
+
+    button {
+      margin-top: 8px;
+      width: 120px;
+    }
+  }
+}

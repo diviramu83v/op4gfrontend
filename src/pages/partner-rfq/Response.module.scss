@@ -1,0 +1,33 @@
+@import '../../styles/variable';
+.bg-gray {
+    background: $ligh-gray-color;
+}
+.bg-blue {
+    background: $primary-color !important;
+}
+.numberInput {
+    height: 25px;
+    padding: 6px;
+    margin: 8px 0 !important;
+    width: 80px;
+    border: 1px solid $table-color;
+    border-radius: $field-border-radius;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    &:focus{
+      border-color: #80bdff;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+    }
+  }
+.total{
+  text-align: center;
+  padding: 12px;
+  background: $table-color;
+  border-radius: $field-border-radius - 2;
+  margin-top: -$field-border-radius;
+}
+.numberInput::-webkit-inner-spin-button,
+.numberInput::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

@@ -1,0 +1,40 @@
+@import '../../styles/variable';
+
+.header {
+  color: white;
+  &-user {
+    p {
+      color: white;
+      text-transform: none;
+      font-weight: 100;
+    }
+    svg {
+      color: white;
+    }
+  }
+}
+
+.header-user {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 1180px) {
+    flex-direction: column;
+    align-items: center;
+
+    .MuiAvatar-root {
+      margin-bottom: 8px;
+    }
+
+    .MuiBox-root {
+      text-align: center;
+    }
+  }
+}
+.popover-user {
+  color: white;
+  p {
+    color: $black-color;
+    font-weight: 300;
+  }
+}

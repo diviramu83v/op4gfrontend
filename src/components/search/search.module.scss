@@ -1,0 +1,109 @@
+@import '../../styles/variable.scss';
+.DropDownButton {
+  margin: 50px 50px;
+  font-size: 1.125rem;
+  width: 320px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  padding: 0px 20px;
+}
+
+.input-with-buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-group input {
+  margin: 0 10px;
+  width: 50px;
+  height: 36px;
+  text-align: center;
+  padding: 6px;
+  border: 1px solid $table-color;
+  border-radius: $field-border-radius;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  &:focus{
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+  }
+}
+
+.border-blue {
+  border: 2px solid #007bff;
+}
+
+.inputRoot {
+  color: inherit;
+  width: 100%;
+}
+
+.search {
+  position: relative;
+  border-radius: 4px;
+  margin-right: 20px;
+  margin-left: 0;
+  width: 100%;
+  border: 1px solid grey;
+}
+
+.searchIcon {
+  padding: 8px;
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputInput {
+  padding: 8px 8px 8px 32px;
+  transition: width 0.2s ease;
+  width: 100%;
+}
+
+.searchBarContainer {
+  min-width: inherit;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: default;
+}
+
+.menuDivider {
+  margin: 0 20px;
+}
+
+.dashboardSelectMenu .MuiPopover-paper {
+  min-width: 380px;
+  max-width: fit-content;
+}
+
+.externalLinkIcon {
+  border-left: 1px solid var(--color-gray-eighty-five);
+  padding: 10px 0px 10px 10px;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.checkedItem {
+  color: indigo;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}

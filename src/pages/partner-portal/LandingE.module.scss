@@ -1,0 +1,79 @@
+@import '../../styles/variable';
+
+.btn {
+  @extend .btn-primary;
+  width: 130px;
+  line-height: 1.2;
+
+  &:disabled {
+    background-color: $gray-color;
+    border: $gray-color solid #6096BA;
+    opacity: 0.3;
+    cursor:not-allowed;
+  }
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 15px;
+  color: #000;
+}
+.d-flex {
+  display: flex;
+}
+.jt-center {
+  justify-content: center;
+}
+.container {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.max-width-1200 {
+  max-width: 1200px;
+}
+.mr-top-40 {
+  margin-top: 40px;
+}
+.m-24 {
+  margin: 0 24px;
+}
+.mr-auto {
+  margin-right: auto;
+}
+.ml-auto {
+  margin-left: auto;
+}
+.mr-bottom-30 {
+  margin-bottom: 30px;
+}
+.mr-top-20 {
+  margin-top: 20px;
+}
+.ox-auto {
+  overflow-x: auto;
+}
+.fs-23 {
+  font-size: $logo-font-size;
+}
+.color-808080 {
+  color: $primary-color;
+}
+.color-white {
+  color: $white-color;
+}
+.pd-top-20 {
+  padding-top: 20px;
+}
+.btn-page {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0px 5px;
+}
+
+.paging-number {
+  font-size: 16px;
+}

@@ -1,0 +1,52 @@
+$primary-color: #274C77;
+$secondary-color: #6096BA;
+$third-color: #A3CEF1;
+$fouth-color: #E7ECEF;
+$gray-color: #8B8C89;
+$ligh-gray-color: #E7ECEF;
+$red-color: #ff0000;
+$black-color: #000000;
+$white-color: #ffffff;
+$table-color: #e0e0e0;
+$font-color: #000000de;
+
+$logo-font-size: 24px;
+$body-font-size: 15px;
+$paragraph-font-size: 13px;
+$paragraph-line-height: 1.7;
+$paragraph-letter-spacing: 0.7px;
+$svg-icon-font: 22px;
+$field-border-radius: 5px;
+
+.btn{
+  display: flex;
+  justify-content: center;
+  border-radius: $field-border-radius;
+  line-height: 1.75;
+  font-size: 16px;
+  padding: 8px 16px 8px 12px !important;
+  cursor: pointer;
+  text-transform:none ;
+}
+.btn-primary {
+  @extend .btn;
+  background-color: $secondary-color;
+  color: $white-color;
+  border:none;
+  border: 1px solid  $secondary-color;
+  svg {
+    margin-right: 8px;
+    color: white;
+  }
+}
+.btn-outlined{
+  @extend .btn;
+  color: white !important;
+  background-color: transparent !important;
+  border: 1px solid  white !important;
+  &:hover{
+    background-color: $secondary-color !important;
+    color: $white-color !important;
+    border: 1px solid  $secondary-color !important;
+  }
+}

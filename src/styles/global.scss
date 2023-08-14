@@ -1,0 +1,30 @@
+@import './variable';
+* {
+  padding: 0;
+  margin: 0;
+}
+a {text-decoration: none;}
+body {
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight:300;
+}
+.MuiModal-backdrop {
+  background-color: transparent;
+}
+main {
+  display: flex;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  transition: margin 225ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  #main-content{ width: 100%}
+}
+.MuiDataGrid-columnHeader:focus,.MuiDataGrid-cell:focus,
+.MuiDataGrid-cell:focus-within
+{ outline: none !important;}
+.popover{padding: 12px 16px; font-weight: 100; 
+  span{
+  font-size: 13px;
+  font-weight: 100
+  }
+  p  span {font-size: 12px;}
+}
